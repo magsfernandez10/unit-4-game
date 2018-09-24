@@ -1,24 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <script src='https://code.jquery.com/jquery-3.3.1.min.js' integrity='sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8='crossorigin='anonymous'></script>
+    <title>simple cyrstal game</title>
+
+    <!--Here we added a link to the style css sheet-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--here we added a link to the javascript file-->
+
+    <script type="text/javascript" src="/assets/javascript/game.js"></script>
+
+    <!-- Here we added a link to the jQuery library -->
+    <script src='https://code.jquery.com/jquery-3.3.1.min.js' integrity='sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8='
+        crossorigin='anonymous'></script>
 
 </head>
+
 <body>
 
-        <div id ="game">
-                <h1> The Crystal Game</h1>
-                <p>Guess what number i'm thinking of </p>
-                <p>Wins:</p>
-                <p>Losses:</p>
-                <p>Guesses Left:</p>
-                <p>Your Guesses so far:</p>
-            </div>
+    <h1> The Crystal Game</h1>
 
-            <script type="text/javascript" src="assets/javascript/game.js"></script>
+    <div id="game">
+        <h2>Number to Guess: <span id="number-to-guess"></span></h2>
+        <h3>Random Number <span id="random-number"></span></h3>
+
+        <p>Players Total</p>
+        <p>Guesses Left:</p>
+        <p>Your Guesses so far:</p>
+    </div>
+
+    <div id="crystals">
+        <img class="colorblue" src="assets/images/blue.jpeg" alt="blue">
+        <img class="colorpurple" src="assets/images/Lavendar.jpeg" alt="lavendar">
+        <img class="colorful" src="assets/images/colorful.jpeg" alt="colorful">
+        <img class="clearcrystal" src="assets/images/Crystal.jpeg" alt="crystal">
+
+    </div>
+
+
 </body>
+
 </html>
