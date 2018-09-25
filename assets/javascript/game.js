@@ -1,18 +1,39 @@
 
 var targetNumber = 50;
+var counter = 0;
+var numberOptions = [10,11, 3,5];
 
-$("#number-to-guess").text(targetNumber);
+var increment = numberOptions[Math.round(Math.random())];
+//create a global crystal variable using crystal class///
 
-var counter = 0
+//create random.Math.floor(Math.Random) for each crystal //
 
-$(".colorblue").on("click",function(){
-    counter +=10;
 
-});
+for (var i=0; i< numberOptions.length; i++){
+    var imageAllcrystals = $("<img>");
+    imageAllcrystals.attr("data-crystalvalue", numberOptions[i]);
+}
+
+//update all crystal increments//
+$(".Allcrystals").on("click",function(){
+    var crystalvalue = ($(this).attr("data-crystalvalue"));
+
+
+counter +=crystalvalue;
 
 if(counter === targetNumber){
-
+//you win//
 
 }
 
-document.getElementById()
+else if (counter >= targetNumber){
+    //you lose//
+
+}
+
+$("#number-to-guess").text(targetNumber);
+$("#random-number").text(random);
+
+});
+
+

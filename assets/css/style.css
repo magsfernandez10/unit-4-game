@@ -1,19 +1,20 @@
-.colorblue {
+.Header{
+ text-align: center;
+ border-style: solid;
+ background-color: aqua;
+ font-family: 'Montserrat', sans-serif;
+}
+
+.Statement{
+    border-style: double;
+    font-family: 'Raleway', sans-serif;
+    text-align: justify;
+    letter-spacing: 1px;
+}
+
+.Allcrystals {
     width: 100px;
     height: 100px;
 }
 
-.colorpurple{
-    width: 100px;
-    height: 100px;
-}
 
-.colorful{
-    width: 100px;
-    height: 100px;
-}
-
-.clearcrystal{
-    width: 100px;
-    height: 100px;
-}

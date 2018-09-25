@@ -8,36 +8,61 @@
     <title>simple cyrstal game</title>
 
     <!--Here we added a link to the style css sheet-->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 
-    <!--here we added a link to the javascript file-->
-
-    <script type="text/javascript" src="/assets/javascript/game.js"></script>
 
     <!-- Here we added a link to the jQuery library -->
     <script src='https://code.jquery.com/jquery-3.3.1.min.js' integrity='sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8='
         crossorigin='anonymous'></script>
 
+    <!--here we added a link to the javascript file-->
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+
+    <!--Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
 </head>
 
 <body>
+    <div class="Header">
 
-    <h1> The Crystal Game</h1>
+        <h1> Crystal Collector</h1>
+
+    </div>
+
+    <div class="Statement">
+        <p>You will be given a random number at the start of the game.</p>
+
+        <p>There are 4 crystals below. By clicking on a crystal below you will add a specific amount of points to your
+            total score.</p>
+
+        <p>You win the game by matching your total score to random number, you lose the game if your total score goes
+            above the random number.</p>
+
+        <p>The value of each crystal is hidden from you unitl you click on it.</p>
+
+        <p>Eeach time when the game starts, the game will change the values of each crystal.</p>
+    </div>
 
     <div id="game">
+
         <h2>Number to Guess: <span id="number-to-guess"></span></h2>
         <h3>Random Number <span id="random-number"></span></h3>
 
+        <p>Wins</p>
+        <p>Losses</p>
+
+
         <p>Players Total</p>
-        <p>Guesses Left:</p>
-        <p>Your Guesses so far:</p>
+
+
     </div>
 
     <div id="crystals">
-        <img class="colorblue" src="assets/images/blue.jpeg" alt="blue">
-        <img class="colorpurple" src="assets/images/Lavendar.jpeg" alt="lavendar">
-        <img class="colorful" src="assets/images/colorful.jpeg" alt="colorful">
-        <img class="clearcrystal" src="assets/images/Crystal.jpeg" alt="crystal">
+        <img class="Allcrystals" src="assets/images/blue.jpeg" alt="blue">
+        <img class="Allcrystals" src="assets/images/Lavendar.jpeg" alt="lavendar">
+        <img class="Allcrystals" src="assets/images/colorful.jpeg" alt="colorful">
+        <img class="Allcrystals" src="assets/images/Crystal.jpeg" alt="crystal">
 
     </div>
 
