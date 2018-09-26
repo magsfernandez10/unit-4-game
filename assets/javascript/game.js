@@ -14,14 +14,20 @@ $(document).ready(function () {
     //reset function//
     var reset = function () {
         playerTotals = 0;
-        getRandomNumber();
+        $("#Total").text(playerTotals);
+        targetNumber = Math.floor(Math.random() * 101) + 19;
+        $("#random-number").text(targetNumber);
+        console.log(targetNumber); 
     }
+    reset();
+
+    //var images = ["src","assets/images/crystal"]
 
     //var getRandomNumber = function () {
         //create random.Math.floor(Math.Random) for each crystal //
-    var targetNumber = Math.floor(Math.random() * 120) + 19;
-        $("#random-number").text(targetNumber);
-        console.log(targetNumber);
+    //var targetNumber = Math.floor(Math.random() * 101) + 19;
+        // $("#random-number").text(targetNumber);
+        // console.log(targetNumber);
 
     //};
     //getRandomNumber();
@@ -34,12 +40,21 @@ for (var i = 0; i < 4; i++){
         console.log(crystal);
         crystal.attr({
             "class":'crystal',
-            "data-random": random
+            "data-random": random,
+            "id":'crystal' +i,
+            // "style": 'background-image: url('
         });
+        // crystal.css(
+        //     'background-image', 'url("'+'https://gallery.yopriceville.com/var/resizes/Free-Clipart-Pictures/Jewelry-and-Diamonds-PNG/Diamond_Transparent_Clip_Art_Image.png?m=1507172105'+'")',
+        //     // "background-size": "cover"
+        // );
 
         $("#crystals").append(crystal);
-        
-    
+        $('#crystal0').css(
+            'background-image', 'url("'+'https://gallery.yopriceville.com/var/resizes/Free-Clipart-Pictures/Jewelry-and-Diamonds-PNG/Diamond_Transparent_Clip_Art_Image.png?m=1507172105'+'")',
+            // "background-size": "cover"
+        );
+    //
     }
 
     $(".crystal").on('click', function() {
@@ -53,17 +68,17 @@ for (var i = 0; i < 4; i++){
             alert("You win")
             wins++;
             $("#wins").text(wins);
+            reset();
         } 
         
         else if (playerTotals >= targetNumber) {
             alert("You Lose")
             losses++;
             $("#losses").text(losses);
+            reset();
         }
     });
 
-
-    
 
     });
 

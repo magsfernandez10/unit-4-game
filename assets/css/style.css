@@ -16,6 +16,7 @@
     display: flex;
     justify-content: space-around;    
     align-items: center;
+
 }
 .crystal{
 border: 1px solid green;
@@ -26,4 +27,8 @@ width: 200px;
 
 .Total{
     border-style: solid;
+}
+
+body{
+    background: beige;
 }
