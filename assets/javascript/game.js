@@ -1,39 +1,88 @@
+//once the document has fully loaded all of the HTML is ready, run this function
+$(document).ready(function () {
 
-var targetNumber = 50;
-var counter = 0;
-var numberOptions = [10,11, 3,5];
-
-var increment = numberOptions[Math.round(Math.random())];
-//create a global crystal variable using crystal class///
-
-//create random.Math.floor(Math.Random) for each crystal //
-
-
-for (var i=0; i< numberOptions.length; i++){
-    var imageAllcrystals = $("<img>");
-    imageAllcrystals.attr("data-crystalvalue", numberOptions[i]);
-}
-
-//update all crystal increments//
-$(".Allcrystals").on("click",function(){
-    var crystalvalue = ($(this).attr("data-crystalvalue"));
+    //set variables//
+    var targetNumber;
+    var playerTotals = 0;
+    //var numberOptions = [];
+    var wins = 0;
+    var losses = 0;
+    //var crystalValue;
 
 
-counter +=crystalvalue;
 
-if(counter === targetNumber){
-//you win//
+    //reset function//
+    var reset = function () {
+        playerTotals = 0;
+        getRandomNumber();
+    }
 
-}
+    //var getRandomNumber = function () {
+        //create random.Math.floor(Math.Random) for each crystal //
+    var targetNumber = Math.floor(Math.random() * 120) + 19;
+        $("#random-number").text(targetNumber);
+        console.log(targetNumber);
 
-else if (counter >= targetNumber){
-    //you lose//
+    //};
+    //getRandomNumber();
 
-}
+for (var i = 0; i < 4; i++){
+        console.log("hello world");
+        var random = Math.floor(Math.random() *12) + 1;
+        console.log(random);
+        var crystal = $("<div>");
+        console.log(crystal);
+        crystal.attr({
+            "class":'crystal',
+            "data-random": random
+        });
 
-$("#number-to-guess").text(targetNumber);
-$("#random-number").text(random);
+        $("#crystals").append(crystal);
+        
+    
+    }
 
-});
+    $(".crystal").on('click', function() {
+        var number = parseInt($(this).attr('data-random'));
+        playerTotals = playerTotals + number;
+        console.log(playerTotals);
+        $("#Total").text(playerTotals);
+        $(this).text(number);
 
+        if (playerTotals === targetNumber) {
+            alert("You win")
+            wins++;
+            $("#wins").text(wins);
+        } 
+        
+        else if (playerTotals >= targetNumber) {
+            alert("You Lose")
+            losses++;
+            $("#losses").text(losses);
+        }
+    });
+
+
+    
+
+    });
+
+
+    //* The random number shown at the start of the game should be between 19 - 120.
+
+    //* Each crystal should have a random hidden value between 1 - 12.
+
+    //update all crystal increments//
+    //$(".Allcrystals").on("click",function(){
+    //var crystalvalue = ($(this).attr("data-crystalvalue"))
+    //}
+
+    //generate a random target number
+    // targetNumber = Math.floor(Math.random());
+    // $("#random-number").text(targetNumber);
+
+
+    //playerTotals +=crystalvalue;
+
+  
 

@@ -7,30 +7,32 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>simple cyrstal game</title>
 
-    <!--Here we added a link to the style css sheet-->
-    <link rel="stylesheet" href="assets/css/style.css">
-
 
     <!-- Here we added a link to the jQuery library -->
     <script src='https://code.jquery.com/jquery-3.3.1.min.js' integrity='sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8='
         crossorigin='anonymous'></script>
 
+    <!--Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <!--Here we added a link to the style css sheet-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
     <!--here we added a link to the javascript file-->
     <script type="text/javascript" src="assets/javascript/game.js"></script>
 
-    <!--Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
 
 </head>
 
 <body>
-    <div class="Header">
+    <nav class="Header">
 
         <h1> Crystal Collector</h1>
 
-    </div>
+    </nav>
 
-    <div class="Statement">
+    <nav class="Statement">
         <p>You will be given a random number at the start of the game.</p>
 
         <p>There are 4 crystals below. By clicking on a crystal below you will add a specific amount of points to your
@@ -42,27 +44,28 @@
         <p>The value of each crystal is hidden from you unitl you click on it.</p>
 
         <p>Eeach time when the game starts, the game will change the values of each crystal.</p>
-    </div>
+        </nav>
 
-    <div id="game">
+    <nav id="game">
 
-        <h2>Number to Guess: <span id="number-to-guess"></span></h2>
-        <h3>Random Number <span id="random-number"></span></h3>
+        <br>
+        <h3>Random Number to Guess:<span id="random-number"></span></h3>
+        <br>
 
-        <p>Wins</p>
-        <p>Losses</p>
-
-
-        <p>Players Total</p>
+        <p>Wins:<span id="wins"></span></p>
+        <p>Losses:<span id="losses"></span></p>
 
 
-    </div>
+        <p>Players Total Score:<span id="Total"></span></p>
+
+
+    </nav>
 
     <div id="crystals">
-        <img class="Allcrystals" src="assets/images/blue.jpeg" alt="blue">
-        <img class="Allcrystals" src="assets/images/Lavendar.jpeg" alt="lavendar">
-        <img class="Allcrystals" src="assets/images/colorful.jpeg" alt="colorful">
-        <img class="Allcrystals" src="assets/images/Crystal.jpeg" alt="crystal">
+        <!-- <img src="assets/images/blue.jpeg" alt="blue"> -->
+        <!-- <img src="assets/images/Lavendar.jpeg" alt="lavendar"> -->
+        <!-- <img src="assets/images/colorful.jpeg" alt="colorful"> -->
+        <!-- <img src="assets/images/Crystal.jpeg" alt="clearcrystal"> -->
 
     </div>
 
