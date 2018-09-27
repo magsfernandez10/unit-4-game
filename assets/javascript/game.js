@@ -51,9 +51,30 @@ for (var i = 0; i < 4; i++){
 
         $("#crystals").append(crystal);
         $('#crystal0').css(
-            'background-image', 'url("'+'https://gallery.yopriceville.com/var/resizes/Free-Clipart-Pictures/Jewelry-and-Diamonds-PNG/Diamond_Transparent_Clip_Art_Image.png?m=1507172105'+'")',
+            'background-image', 'url("'+'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROcYiogtAH0qyTkQoMLIq5mjSro_TBTWZe07n6C3WH4yBRbSCs'+'")',
             // "background-size": "cover"
+            
         );
+        $("#crystals").append(crystal);
+        $('#crystal1').css(
+            'background-image', 'url("'+'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTST8ovwcFeZ-tDcKZS3EWJZdJtUEWWUlhquAwHRUIp0bwXNcfV'+'")',
+            // "background-size": "cover"
+            
+        );
+        $("#crystals").append(crystal);
+        $('#crystal2').css(
+            'background-image', 'url("'+'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGT_DrhPa4siZ_Vws_gYlGQXDo4ttdmLDIg98m7tgw3seqJS2MEA'+'")',
+            // "background-size": "cover"
+            
+        );
+        $("#crystals").append(crystal);
+        $('#crystal3').css(
+            'background-image', 'url("'+'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyCMtLVYbUAl7aSv1HboUb87xYDSqYP-LPtXVoQe1Zx9U0b6MO'+'")',
+            // "background-size": "cover"
+            
+        );
+
+
     //
     }
 
